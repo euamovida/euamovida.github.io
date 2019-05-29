@@ -10,11 +10,14 @@ user_description: Amar jamais será demais!
 user_title: Eu Amo Vida
 email: projetoeuamovida@gmail.com
 twitter_username: projeuamovida
-github_username:  euamovida
-# gplus_username:  lorem_ipsum
+facebook:  projetoeuamovida
+instagram: projetoeuamovida
 
 # Google-analytics
 google-analytics:
   id: ""
+
+plugins:
+  - jekyll-seo-tag
 
 exclude: ['package.json', 'src' , 'node_modules']
