@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <body>
+    <div class="container">
+      {% include header.html %}
+      {%- if site.posts.size > 0 -%}
+    <h2 id="posts">{{ pg-blog.list_title | default: "Posts" }}</h2>
+    <div class="row" id="posts" style="width: 90%; margin-left: 7%; margin-top: 15%">
+    {%- for post in site.posts -%}
+    <div class="col-sm col-md-4">
+      {%- assign date_format = site.particle.date_format | default: "%b %-d, %Y" -%}
+      <div class="thumbnail" align="center">
+        <a href="#teste-um">
+          <img src="/assets/img/logo.png" height="300" width="300">
+        </a>
+        <div class="caption">
+          <a class="post-link" href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+          </a>
+          <span class="post-meta">{{ post.date | date: date_format }}</span>
+          <a href="teste-um" role="button" class="btn btn-danger" style="font-family: 'minimal'; font-weight: bold; font-size: 18px;">LEIA MAIS</a>
+        </div>
+      </div>
+    </div>
+      {%- endfor -%}
+      {%- endif -%}
+  </div>
+  {{ content }}
+  {% include footer.html %}
+  </body>
+</html>

@@ -1,12 +1,12 @@
 # Site settings
 title: Eu Amo Vida
-description: Amar jamais será demais!
+description: "Por onde for... A toda vida doe amor!"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "euamovida.com"
 
 # User settings
 # username: Eu Amo Vida
-user_description: Amar jamais será demais!
+user_description: Por onde for... A toda vida doe amor!
 user_title: Eu Amo Vida
 email: projetoeuamovida@gmail.com
 twitter_username: projeuamovida
@@ -17,7 +17,10 @@ instagram: projetoeuamovida
 google-analytics:
   id: ""
 
+permalink: /:title
+
 plugins:
   - jekyll-seo-tag
+  - jekyll-feed
 
 exclude: ['package.json', 'src' , 'node_modules']
