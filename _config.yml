@@ -16,7 +16,7 @@ youtube: UCdw2AwXnDpZsEGDx0rasxlQ
 
 # Google-analytics
 google-analytics:
-  id: ""
+  id: "UA-141590432-1"
 
 permalink: /:title
 
