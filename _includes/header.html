@@ -1,26 +1,62 @@
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
 <div id="particles-js">
   <div class="header">
-      <h1 style="padding-bottom: 1em;">
-          <a class="link" href="/index.html"><img src="/assets/img/logo.png" style="width: 150px; height: 170px;"></a>
-        <span class="site-description">{{site.user_title}}</span>
-      </h1><br><br>
+      <div class="header-links">
+        <a class="link" href="#about" data-scroll>Sobre</a>
+        <a class="link" href="#campanha2019" data-scroll>Campanha 2019</a>        
+        <a class="link" href="#lorena" data-scroll>Lorena</a>
+        <a class="link" href="#projects" data-scroll>Onde Estamos</a>
+        <!--<a class="link" href="/blog/#posts">Blog</a>-->
+        <!--<a class="link" href="#apoie" data-scroll>Apoie</a>-->
+      </div>
+
       <div class="header-icons">
-        <a aria-label="My Medium" target="_blank" href="https://www.instagram.com/{{site.instagram}}"><i class="icon fa fa-medium" aria-hidden="true"></i></a>
+        <!--<a aria-label="My Medium" target="_blank" href="https://www.instagram.com/{{site.instagram}}"><i class="icon fa fa-medium" aria-hidden="true"></i></a>-->
         <a aria-label="My Instagram" target="_blank" href="https://www.instagram.com/{{site.instagram}}"><i class="icon fa fa-instagram" aria-hidden="true"></i></a>
         <a aria-label="My Facebook" target="_blank" href="https://fb.com/{{site.facebook}}"><i class="icon fa fa-facebook" aria-hidden="true"></i></a>
         <a aria-label="My Twitter" target="_blank" href="https://twitter.com/{{site.twitter_username}}"><i class="icon fa fa-twitter" aria-hidden="true"></i></a>
         <a aria-label="My YouTube" target="_blank" href="https://youtube.com/{{site.youtube}}"><i class="icon fa fa-youtube-play" aria-hidden="true"></i></a>
         <a aria-label="Send email" href="mailto:{{site.email}}"><i class="icon fa fa-envelope"></i></a>
-      </div>
-      <div class="header-links">
-        <a class="link" href="#about" data-scroll>Sobre</a>
-        <a class="link" href="#lorena" data-scroll>Lorena</a>
-        <a class="link" href="#campanha2019" data-scroll>Campanha 2019</a>
-        <a class="link" href="#projects" data-scroll>Onde Estamos</a>
-        <!--<a class="link" href="/blog/#posts">Blog</a>-->
-        <a class="link" href="#apoie" data-scroll>Apoie</a>
-      </div>
+      </div>   
+
   </div>
+  <!-- <div class="gambiarra">
+    <a class="link" href="/index.html"><img src="/assets/img/aaa.jpg"></a><br>
+  </div>-->
+
+  <div id="cacto">
+    <div id="letras">
+      <p style="margin: 0;">vem amar a</p>
+      <p style="margin: 0;">vida junto com</p>
+      <p style=" margin: 0; margin-left: 34%;margin-top: 1%;">&nbsp;a&nbsp;&nbsp;gente?</p>
+    </div>
+    <img src="/assets/img/cacto.png">
+  </div>
+
+ <div id="header-logo">
+    <a class="link" href="/index.html"><img src="/assets/img/logo.png"></a>
+  </div>
+
   <a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
+
+  <!--<a href="javascript:" id="return-to-top"><i class="fas fa-chevron-circle-up"></i></a>-->
 </div>
+
+    
+  <script type="text/javascript">
+        // ===== Scroll to Top ==== 
+    $(window).scroll(function() {
+        if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+            $('#return-to-top').fadeIn(200);    // Fade in the arrow
+        } else {
+            $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+        }
+    });
+    $('#return-to-top').click(function() {      // When arrow is clicked
+        $('body,html').animate({
+            scrollTop : 0                       // Scroll to top of body
+        }, 500);
+    });
+  </script>
 
